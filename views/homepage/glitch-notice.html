@@ -15,6 +15,7 @@
     </div>
   </div>
 
+  {% if pageName == "home" %}
   <div class="glitch glitch-cta underlay hidden">
     <div class="glitch-cta content">
       <img class="cta-close" src="/img/clear.svg" tabindex="0">
@@ -29,4 +30,5 @@
       <p class="notice">{{ gettext("learnMore") | instantiate | safe }}</p>
     </div>
   </div>
+  {% endif %}
 {% endblock %}
